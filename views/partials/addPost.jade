@@ -1,0 +1,11 @@
+div
+  legend
+     h4(class='muted') New Post
+form
+  fieldset
+    label(for='title') Title:
+    input(ng-model='form.title', name='title',  type='text', class="input-xxlarge" )
+    label(for='text') Text:
+    textarea(ng-model='form.text', rows='10', class="input-xxlarge" )
+    p
+      button(ng-click='submitPost()', class='btn') Save  
